@@ -1,0 +1,49 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\guill\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\guill\AppData\Local\Microsoft\WindowsApps;C:\Users\guill\AppData\Local\gitkraken\bin;C:\Users\guill\AppData\Roaming\npm;C:\PATH;C:\Users\guill\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\guill\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\guill\Desktop\Directory\trillo-project\package.json: Unexpected token } in JSON at position 470
+      at JSON.parse (<anonymous>)
+      at C:\Users\guill\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\guill\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\guill\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "trillo",
+    "version": "1.0.0",
+    "description": "trillo project with flexbox",
+    "main": "index.js",
+    "scripts": {
+      "watch:sass": "node-sass sass/main.scss css/style.css -w",
+      "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+      "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+      "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    },
+    "author": "Jonas",
+    "license": "ISC",
+    "devDependencies": {
+      "autoprefixer": "^7.1.4",
+      "node-sass": "^4.5.3",
+      "postcss-cli": "^4.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
