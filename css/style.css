@@ -58,6 +58,7 @@ body {
   min-height: 50rem; }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--grey-light-2);
@@ -102,16 +103,21 @@ body {
       background-color: var(--grey-light-3); }
       .search__input:focus + .search__button {
         background-color: var(--grey-light-3); }
+      .search__input:focus::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--grey-light-4); }
   .search__button {
     border: none;
-    background-color: var(--grey-light-2); }
+    background-color: var(--grey-light-2);
+    transition: transform 200ms; }
     .search__button:focus {
       outline: none; }
     .search__button:active {
       transform: translateY(2px); }
   .search__icon {
     height: 2rem;
-    width: 2rem; }
+    width: 2rem;
+    fill: var(--grey-dark-3); }
 
 .user-nav {
   display: flex;
