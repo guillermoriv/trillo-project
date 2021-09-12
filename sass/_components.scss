@@ -2,16 +2,50 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 // - Search
 .search {
-  &__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40%;
 
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--grey-light-2);
+    color: inherit;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 200ms;
+    margin-right: -2.5rem;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--grey-light-3);
+
+      & + .search__button {
+        background-color: var(--grey-light-3);
+      }
+    }
   }
 
   &__button {
+    border: none;
+    background-color: var(--grey-light-2);
 
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
@@ -22,6 +56,9 @@
 
 // - User Navigation
 .user-nav {
+  display: flex;
+  align-items: center;
+
   &__icon-box {
 
   }
